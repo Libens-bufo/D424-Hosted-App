@@ -3,11 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New HTML File</title>
+    <title>Download Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1e1e2f;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #1e1e2f;
+            margin-bottom: 20px;
+        }
+        a.download-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+        a.download-link:hover {
+            background-color: #2c80b4;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Hello, world!</h1>
+    <div class="container">
+        <h1>Download Your File</h1>
+        <a class="download-link" href="/your-file.zip" download>Click here to download</a>
+    </div>
 
 </body>
 </html>
